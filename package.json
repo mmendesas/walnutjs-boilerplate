@@ -1,0 +1,28 @@
+{
+  "name": "walnutjs-test",
+  "version": "1.0.0",
+  "description": "Test project with structure using WalnutJS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmendesas/walnutjs-test.git"
+  },
+  "keywords": [
+    "walnutJS"
+  ],
+  "author": "Marcio Mendes (mmendesas)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmendesas/walnutjs-test/issues"
+  },
+  "homepage": "https://github.com/mmendesas/walnutjs-test#readme",
+  "dependencies": {
+    "walnutjs": "^1.0.14"
+  }
+}
