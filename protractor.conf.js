@@ -27,7 +27,7 @@ exports.config = {
 
     // Spec patterns are relative to the current working directly when protractor is called.
     specs: [
-        'test/**/sample-walnut.feature'        
+        'test/**/*.feature'
     ],
 
     // Options to be passed to Cucumber.
@@ -39,13 +39,16 @@ exports.config = {
             'test/support/**/*.js',
 
             // walnutjs            
-            'node_modules/walnutjs/src/step_defs/**/*.js',
-            'node_modules/walnutjs/src/support/**/*.js',
+            //'node_modules/walnutjs/src/step_defs/**/*.js',
+            //'node_modules/walnutjs/src/support/**/*.js',
+
+            '/home/mmendes/Developer/frameworks/walnutjs/src/step_defs/**/*.js',
+            '/home/mmendes/Developer/frameworks/walnutjs/src/support/**/*.js'
         ],
         // Only execute the features or scenarios with tags matching @dev.
         // This may be an array of strings to specify multiple tags to include.
-        // tags: '@dev',
-        
+        tags: '@api_walnutjs',
+
         // How to format features (progress, summary, pretty, json)
         format: 'pretty',
     },
