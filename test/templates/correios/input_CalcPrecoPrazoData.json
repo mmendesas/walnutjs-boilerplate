@@ -1,0 +1,17 @@
+{
+	"nCdEmpresa": "s:string",
+	"sDsSenha": "s:string",
+	"nCdServico": "s:string",
+	"sCepOrigem": "s:string",
+	"sCepDestino": "s:string",
+	"nVlPeso": "s:string",
+	"nCdFormato": "s:int",
+	"nVlComprimento": "s:decimal",
+	"nVlAltura": "s:decimal",
+	"nVlLargura": "s:decimal",
+	"nVlDiametro": "s:decimal",
+	"sCdMaoPropria": "s:string",
+	"nVlValorDeclarado": "s:decimal",
+	"sCdAvisoRecebimento": "s:string",
+	"sDtCalculo": "s:string"
+}

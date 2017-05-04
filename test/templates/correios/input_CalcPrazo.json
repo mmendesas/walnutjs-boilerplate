@@ -1,0 +1,5 @@
+{
+	"nCdServico": "s:string",
+	"sCepOrigem": "s:string",
+	"sCepDestino": "s:string"
+}
