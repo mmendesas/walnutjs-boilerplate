@@ -1,9 +1,0 @@
-{
-	"result[]": {
-		"DESCR": "xs:string",
-		"NumeroOrdemDeVendaSAP": "xs:string",
-		"STATUS": "xs:string",
-		"targetNSAlias": "tns",
-		"targetNamespace": "http://soap.sforce.com/schemas/class/serviceAtualizaPedidoItens"
-	}
-}
