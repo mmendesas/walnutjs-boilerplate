@@ -40,10 +40,7 @@ exports.config = {
 
             // walnutjs            
             'node_modules/walnutjs/src/step_defs/**/*.js',
-            'node_modules/walnutjs/src/support/**/*.js',
-
-            //'/home/mmendes/Developer/frameworks/walnutjs/src/step_defs/**/*.js',
-            //'/home/mmendes/Developer/frameworks/walnutjs/src/support/**/*.js'
+            'node_modules/walnutjs/src/support/**/*.js'            
         ],
         // Only execute the features or scenarios with tags matching @dev.
         // This may be an array of strings to specify multiple tags to include.
@@ -56,9 +53,9 @@ exports.config = {
     resultJsonOutputFile: './test/results.json',
 
     walnutjsOpts: {
-        projectName: 'google-test',      //default is qaaut-test
-        enableDebugLog: false,           //default is disabled
-        waitElementTimeout: 20000,       //default is 10000
-        evidencesPath: '/home/mmendes/Desktop/mteste/' //default is './test/logs/'
+        projectName: 'walnutjs-test',          //default is qaaut-test
+        enableDebugLog: false,                 //default is disabled
+        waitElementTimeout: 20000,             //default is 10000
+        //evidencesPath: '/path/to/evidences/' //default is './test/logs/'
     }
 };
