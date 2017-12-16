@@ -39,12 +39,15 @@ exports.config = {
             'test/support/**/*.js',
 
             // walnutjs            
-            'node_modules/walnutjs/src/step_defs/**/*.js',
-            'node_modules/walnutjs/src/support/**/*.js'            
+            // 'node_modules/walnutjs/src/step_defs/**/*.js',
+            // 'node_modules/walnutjs/src/support/**/*.js'  
+            
+            '/home/mmendesas/Developer/QA/frameworks/walnutjs/src/step_defs/**/*.js',
+            '/home/mmendesas/Developer/QA/frameworks/walnutjs/src/support/**/*.js'
         ],
         // Only execute the features or scenarios with tags matching @dev.
         // This may be an array of strings to specify multiple tags to include.
-        tags: '@simple_web',
+        tags: '@simple_api',
 
         // How to format features (progress, summary, pretty, json)
         format: 'pretty',
