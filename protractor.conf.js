@@ -18,7 +18,10 @@ exports.config = {
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        chromeOptions: {
+            args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+        }
     },
 
     framework: 'custom',  // set to "custom" instead of cucumber.
@@ -44,7 +47,7 @@ exports.config = {
         ],
         // Only execute the features or scenarios with tags matching @dev.
         // This may be an array of strings to specify multiple tags to include.
-        tags: '@simple_web',
+        tags: '@groselha',
 
         // How to format features (progress, summary, pretty, json)
         format: 'pretty',
@@ -57,5 +60,7 @@ exports.config = {
         enableDebugLog: false,                 //default is disabled
         waitElementTimeout: 20000,             //default is 10000
         //evidencesPath: '/path/to/evidences/' //default is './test/logs/'
+        parametersPath: './test/params/qa-params.json',
+        locatorsPath: 'test/locators'
     }
 };

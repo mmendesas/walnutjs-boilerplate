@@ -1,0 +1,8 @@
+{
+  "cucumberautocomplete.steps": [
+    "node_modules/walnutjs/src/step_defs/**/*.js",
+    "node_modules/walnutjs/src/support/**/*.js"
+  ],
+  "cucumberautocomplete.syncfeatures": "test/features/*feature",
+  "cucumberautocomplete.strictGherkinCompletion": true
+}
