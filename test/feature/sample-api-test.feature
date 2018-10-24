@@ -61,7 +61,7 @@ Feature: API test
             "json": {
             "mteste": "groselha"
             },
-            "origin": "200.186.50.162",
+            "origin": "187.51.144.58",
             "url": "https://httpbin.org/post"
             }
             """
