@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mmendesas/walnutjs-test#readme",
   "dependencies": {
-    "walnutjs": "^1.0.49"
+    "walnutjs": "^1.0.52"
   },
   "devDependencies": {
     "unirest": "^0.5.1"

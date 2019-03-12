@@ -31,7 +31,6 @@ Feature: API test
         When (api) user sends the request
         Then (api) the response status should be '200'
         And (api) the XML response key '(//title)[1]' should have value equals to 'Wake up to WonderWidgets!'
-    #And (api) user prints the current RESPONSE body content
 
     @simple_api
     Scenario: I want to make a simple POST request
@@ -43,27 +42,25 @@ Feature: API test
             """
         When (api) user sends the request
         Then (api) the response status should be '200'
-        #And (api) user prints the current RESPONSE body content
+        And (api) user prints the current RESPONSE body content
         And (api) the JSON response should be:
             """
             {
-            "args": {},
-            "data": "{ \"mteste\": \"groselha\"}",
-            "files": {},
-            "form": {},
+            "args": {}, 
+            "data": "{ \"mteste\": \"groselha\"}", 
+            "files": {}, 
+            "form": {}, 
             "headers": {
-            "Accept": "application/json",
-            "Connection": "close",
-            "Content-Length": "23",
-            "Content-Type": "application/json",
-            "Host": "httpbin.org"
-            },
+                "Accept": "application/json", 
+                "Content-Length": "23", 
+                "Content-Type": "application/json", 
+                "Host": "httpbin.org"
+            }, 
             "json": {
-            "mteste": "groselha"
-            },
-            "origin": "187.51.144.58",
+                "mteste": "groselha"
+            }, 
+            "origin": "187.51.144.58, 187.51.144.58", 
             "url": "https://httpbin.org/post"
             }
             """
-
-#And (api) the JSON response key '$..data' should have value equals to 'httpbin.org'
+        And (api) the JSON response key '$..headers.Host' should have value equals to 'httpbin.org'
