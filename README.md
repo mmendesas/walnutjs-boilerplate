@@ -1,9 +1,9 @@
-# WalnutJS-Test
- * Test project with default structure using [WalnutJS](https://github.com/mmendesas/walnutjs).
- * Use this project as a template to create your own project using the WalnutJS framework.
+# walnutjs-boilerplate
+ * Starter project with default structure using [walnutjs](https://github.com/mmendesas/walnutjs).
+ * Use this project as a template to create your own project based on **walnutjs**
 
 
-### Pre-Requisites
+### Prerequisites
 
 Before start, you need to install the following programs:
 
@@ -30,25 +30,25 @@ $ sudo apt-get install oracle-java8-installer
 
 Make the clone of the project 
 
-```
-$ git clone git@github.com:mmendesas/walnutjs-test.git
-$ cd walnutjs-test
+```sh
+git clone git@github.com:mmendesas/walnutjs-test.git
+cd walnutjs-test
 ```
 Install the dependencies of the project
 
-```
-$ npm install
+```sh
+npm install
 ```
 
 ## Running the tests
 
 For execution just run these following commands
 
-```
-$ webdriver-manager update
-$ webdriver-manager start
+```sh
+webdriver-manager update
+webdriver-manager start
 ```
 Inside the project folder:
-```
-$ protractor protractor.conf.js
+```sh
+protractor protractor.conf.js
 ```

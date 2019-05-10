@@ -1,17 +1,29 @@
 {
-    "containers":[
+    "containers": [
         {
             "name": "GoogleHome",
-            "locators":[
-                { "key": "SearchInput", "type": "name", "value": "q" },
-                { "key": "SearchButton", "type": "p:xpath", "value": "//input[contains(@value,'{0}')]" }
-            ]            
+            "locators": [
+                {
+                    "key": "SearchInput",
+                    "type": "name",
+                    "value": "q"
+                },
+                {
+                    "key": "SearchButton",
+                    "type": "xpath",
+                    "value": "(//input[contains(@name,'btnK')])[1]"
+                }
+            ]
         },
         {
             "name": "GoogleResult",
-            "locators":[
-                { "key": "SiteLink", "type": "xpath", "value": "(//div[@class='rc']//h3)[1]" }
-            ]            
+            "locators": [
+                {
+                    "key": "SiteLink",
+                    "type": "xpath",
+                    "value": "(//div[@class='rc']//h3)[1]"
+                }
+            ]
         }
     ]
 }
