@@ -19,9 +19,9 @@ exports.config = {
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
         browserName: 'chrome',
-        chromeOptions: {
-            args: ["--headless", "--disable-gpu", "--window-size=800,600"]
-        }
+        // chromeOptions: {
+        //     args: ["--headless", "--disable-gpu", "--window-size=800,600"]
+        // }
     },
 
     framework: 'custom',  // set to "custom" instead of cucumber.
@@ -42,17 +42,17 @@ exports.config = {
             'test/support/**/*.js',
 
             // walnutjs
-            'node_modules/walnutjs/src/step_defs/**/*.js',
-            'node_modules/walnutjs/src/support/**/*.js'
+            // 'node_modules/walnutjs/src/step_defs/**/*.js',
+            // 'node_modules/walnutjs/src/support/**/*.js'
 
             // only for debug purpouses
-            // '/path/to/projects/work/walnutjs/src/step_defs/**/*.js',
-            // '/path/to/projects/work/walnutjs/src/support/**/*.js'
+            '/Users/mmendesas/Documents/mdocs/walnutjs/src/step_defs/**/*.js',
+            '/Users/mmendesas/Documents/mdocs/walnutjs/src/support/**/*.js'
 
         ],
         // Only execute the features or scenarios with tags matching @dev.
         // This may be an array of strings to specify multiple tags to include.
-        tags: '@simple_api',
+        tags: '@simple_web',
 
         // How to format features (progress, summary, pretty, json)
         format: 'pretty',

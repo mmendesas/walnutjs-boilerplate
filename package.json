@@ -1,7 +1,7 @@
 {
-  "name": "walnutjs-test",
+  "name": "walnutjs-boilerplate",
   "version": "1.0.0",
-  "description": "Test project with structure using WalnutJS",
+  "description": "Test project with base structure to use walnutjs",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,21 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mmendesas/walnutjs-test.git"
+    "url": "git+https://github.com/mmendesas/walnutjs-boilerplate.git"
   },
   "keywords": [
-    "walnutJS"
+    "walnutjs",
+    "bdd",
+    "e2e"
   ],
   "author": "Marcio Mendes (mmendesas)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mmendesas/walnutjs-test/issues"
+    "url": "https://github.com/mmendesas/walnutjs-boilerplate/issues"
   },
-  "homepage": "https://github.com/mmendesas/walnutjs-test#readme",
+  "homepage": "https://github.com/mmendesas/walnutjs-boilerplate#readme",
   "dependencies": {
-    "walnutjs": "^1.0.53"
-  },
-  "devDependencies": {
-    "unirest": "^0.5.1"
+    "walnutjs": "^1.1.0"
   }
 }
