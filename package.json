@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "walnut",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/mmendesas/walnutjs-boilerplate#readme",
   "dependencies": {
-    "walnutjs": "^1.1.0"
+    "cucumber": "^5.1.0",
+    "walnutjs": "^2.0.0"
   }
 }

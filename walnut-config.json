@@ -1,0 +1,34 @@
+{
+    "walnut": {
+        "name": "walnut sample automation",
+        "enableDebug": false,
+        "reports": "./reports",
+        "noScreenshot": false,
+        "launchReport": true,
+        "paths": {
+            "locators": "./test/locators",
+            "evidences": "./test/photos",
+            "parameters": "./test/params/my-params.json"
+        }
+    },
+    "cucumber": {
+        "steps": "./test/step_defs",
+        "timeout": 15000,
+        "features": "./test/features/**/*.feature",
+        "outputFormat": "summary"
+    },
+    "selenium": {
+        "browser": "chrome",
+        "browserTeardownStrategy": "none",
+        "remoteURL": "http://localhost:4444/wd/hub",
+        "caps": {
+            "browserName": "chrome",
+            "chromeOptions": {
+                "args": [
+                    "start-maximized",
+                    "disable-extensions"
+                ]
+            }
+        }
+    }
+}

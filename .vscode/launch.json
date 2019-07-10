@@ -5,12 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Protractor Test",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
-      "stopOnEntry": false,
-      "args": ["${workspaceRoot}/protractor.conf.js"]
+      "name": "Walnut Debug",
+      "program": "${workspaceFolder}/node_modules/walnutjs/src/index.js",
+      "args": [
+        "--tags",
+        "@simple_web"
+      ]
     }
   ]
 }
