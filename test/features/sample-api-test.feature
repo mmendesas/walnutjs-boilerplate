@@ -10,6 +10,7 @@ Feature: API test
     @simple_api
     Scenario: User wants to make a simple GET
         Given (api) user creates a GET request to 'https://httpbin.org/get'
+        And (custom) user prints message 'some simple custom message test'
         And (api) user will send and accept JSON
         When (api) user sends the request
         Then (api) the response status should be '200'
@@ -39,7 +40,9 @@ Feature: API test
         And (api) user will send and accept JSON
         And (api) user add the following value to BODY request:
             """
-            { "mteste": "groselha"}
+            {
+                "mteste": "groselha"
+            }
             """
         When (api) user sends the request
         Then (api) the response status should be '200'
@@ -54,7 +57,9 @@ Feature: API test
         And (api) user will send and accept JSON
         And (api) user add the following value to BODY request:
             """
-            { "mteste": "${vars.user}"}
+            {
+                "mteste": "${vars.user}"
+            }
             """
         When (api) user sends the request
         Then (api) the response status should be '200'
