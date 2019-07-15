@@ -41,13 +41,10 @@ Before start, you need to install the following programs:
 
 ## Running the tests
 
-For execution just run these following commands
+1. For execution just run these following commands to open `selenium-server`:
+    ```sh
+    webdriver-manager update
+    webdriver-manager start
+    ```
 
-```sh
-webdriver-manager update
-webdriver-manager start
-```
-Inside the project folder:
-```sh
-npm start
-```
+2. And just run `npm start` inside the project folder, to start your tests
