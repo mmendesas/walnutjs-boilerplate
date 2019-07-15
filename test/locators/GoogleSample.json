@@ -24,6 +24,46 @@
                     "value": "(//div[@class='rc']//h3)[1]"
                 }
             ]
+        },
+        {
+            "name": "msite",
+            "locators": [
+                {
+                    "key": "name",
+                    "type": "xpath",
+                    "value": "//input[@name='name']"
+                },
+                {
+                    "key": "job",
+                    "type": "id",
+                    "value": "job"
+                },
+                {
+                    "key": "age",
+                    "type": "name",
+                    "value": "age"
+                },
+                {
+                    "key": "genderMale",
+                    "type": "name",
+                    "value": "male"
+                },
+                {
+                    "key": "genderFemale",
+                    "type": "name",
+                    "value": "female"
+                },
+                {
+                    "key": "color",
+                    "type": "id",
+                    "value": "color"
+                },
+                {
+                    "key": "ageTotal",
+                    "type": "id",
+                    "value": "total"
+                }
+            ]
         }
     ]
 }

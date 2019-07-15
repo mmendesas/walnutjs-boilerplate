@@ -2,10 +2,11 @@ Feature: API test
 
     @simple_api
     Scenario: Load Variables using params
+        And user prints the message 'Starting api tests' to console
         Given user stores the following list of variables:
-            | "base_url" | "${params.[$.default.base_url]}" |
-            | "user"     | "${params.[$.default.user]}"     |
-        And user prints the message 'my base url --> ${vars.base_url}' to console
+            | "base_url" | "${params.[$.default.base_url_api]}" |
+            | "user"     | "${params.[$.default.user]}"         |
+        And user prints the message 'my base url --> ${vars.base_url_api}' to console
 
     @simple_api
     Scenario: User wants to make a simple GET
@@ -49,8 +50,6 @@ Feature: API test
         And (api) the JSON response key '$..headers.Host' should have value equals to 'httpbin.org'
         And (api) the JSON response key '$..json.mteste' should have value equals to 'groselha'
 
-
-
     @simple_api
     Scenario: I want to make a simple POST request using var inside body
         Given (api) user creates a POST request to 'https://httpbin.org/post'
@@ -64,3 +63,4 @@ Feature: API test
         When (api) user sends the request
         Then (api) the response status should be '200'
         Then (api) the JSON response key '$..json.mteste' should have value equals to '${vars.user}'
+        And user prints the message 'Api tests were executed!' to console
